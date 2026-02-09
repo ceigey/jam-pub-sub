@@ -35,7 +35,7 @@ export const config: Config;
  */
 export function configure(options: Partial<Config>): Config;
 
-export declare function publishOnce(name: string, handler: (...args: any[]): { [collectionName: string]: object[] }): void;
+export declare function publishOnce(name: string, handler: (...args: any[]) => void): void;
 export declare function stream(name: string, handler: (...args: any[]) => void): void;
 
 declare module 'meteor/meteor' {
